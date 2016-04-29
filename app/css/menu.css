@@ -1,0 +1,37 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menudemoBasicUsage .md-menu-demo {
+    padding: 24px; }
+.menudemoBasicUsage .menu-demo-container {
+    min-height: 200px; }
+
+.bgltblue {
+    background-color: lightblue;
+}
+.bgltgreen {
+    background-color: lightgreen;
+}
+.bgsilver {
+    background-color: silver;
+    }
+.avatar {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0px;
+    vertical-align: middle;
+    zoom: 0.70;
+    tranform: translateZ(0);
+    -webkit-transform: scale(0.70);
+    -moz-transform: scale(0.70);
+}
