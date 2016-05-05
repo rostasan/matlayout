@@ -5,24 +5,32 @@
     function config($routeProvider) {
         $routeProvider
               .when('/', {
-                templateUrl: 'view/homepage.html',
+                templateUrl: 'views/homepage.html',
                 conrtroller: 'HomeController',
                 controllerAs: 'vm'
               })
               .when('/autocomplete',{
-                  templateUrl: 'view/autocomplete.html',
+                  templateUrl: 'views/autocomplete.html',
                   controller: 'autoCompleteController',
                   controllerAs: 'vm'
               })
               .when('/bottomsheet',{
-                  templateUrl: 'view/bottomsheet.html',
+                  templateUrl: 'views/bottomsheet.html',
                   controller: 'bottomSheetController',
                   controllerAs: 'vm'
               })
               .when('/cards', {
-                templateUrl: 'view/cards.html',
+                templateUrl: 'views/cards.html',
                 controller: 'cardController'
               })
+              .when('/registration', {
+                templateUrl: 'views/registration.html',
+                controller: 'RegistrationController',
+                controlleras: 'vm'
+              })
+                .otherwise({
+                    redirectTo: '/'
+              });
 
     }
 })();
