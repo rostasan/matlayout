@@ -1,5 +1,6 @@
+(function(){
 angular
-  .module('mainApp')
+  .module('menu', [])
     .config(function($mdIconProvider) {
         $mdIconProvider
             .iconSet("call", 'assets/iconsets/communication-icons.svg', 24)
@@ -9,11 +10,42 @@ angular
 
     .controller('MenuCtrl', function MenuCtrl($mdDialog) {
 
-    });
+    })
 
 
+        .config(config);
+    function config($routeProvider) {
+        $routeProvider
+            .when('/bizarre', {
+                templateUrl: 'views/partners/bizarre.html',
+                conrtroller: '',
+                controllerAs: 'vm'
+            })
+            .when('/event',{
+                templateUrl: 'views/partners/event.html',
+                controller: '',
+                controllerAs: 'vm'
+            })
+            .when('/marketing',{
+                templateUrl: 'views/partners/marketing.html',
+                controller: '',
+                controllerAs: 'vm'
+            })
+            .when('/sponsor', {
+                templateUrl: 'views/partners/sponsor.html',
+                controller: ''
+            })
+            .when('/vendor', {
+                templateUrl: 'views/partners/vendor.html',
+                controller: '',
+                controlleras: 'vm'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
 
-
+    }
+})();
 
 
 
